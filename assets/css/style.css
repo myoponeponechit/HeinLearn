@@ -1,0 +1,28 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.custom_bgcolor{
+    background-color: rgb(197, 4, 4);
+}
+
+.nav-item{
+    color: rgb(197, 4, 4) !important;
+}
+.nav-link:hover{
+    color: white;
+}
+body{
+    background: url('../images/feature.png') rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media(max-width: 991px) {
+    .sidebar {
+        background-color: rgba(255, 255, 255,0.15);
+        backdrop-filter: blur(10px);
+    }
+}

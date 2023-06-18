@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "Prata-Regular";
+    src: url(../fonts/Prata-Regular.ttf);
+}
+
+@font-face {
+    font-family: "SourceSansPro-Black";
+    src: url(../fonts/SourceSansPro-Black.ttf);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.custom_bgcolor{
+    background-color: rgb(196, 14, 14);
+    font-weight: bold;
+}
+
+.nav-item a{
+    color: white;
+}
+
+.nav-item a:hover{
+    color: white;
+    font-style: italic;
+}
+
+@media(max-width: 991px) {
+    .sidebar {
+        background-color: rgba(255, 255, 255,0.15);
+        backdrop-filter: blur(10px);
+    }
+
+}
+@media(max-width: 700px) {
+    #NavItem{
+        border-top: 1px solid white;
+    }
+}
+.intro_text{
+    color: rgb(196, 14, 14);
+    font-family: Prata-Regular;
+}
+.text{
+    position: absolute;
+    margin-top: -40%;
+    /* color: rgb(196, 14, 14); */
+    color: black;
+    padding-left: 130px; 
+    font-family: Prata-Regular;
+  } 
+ h1{
+    font-family: Prata-Regular;
+ }
+  .get_btn:hover{
+    font-style: italic;
+  }
