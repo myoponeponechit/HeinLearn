@@ -8,15 +8,17 @@
     src: url(../fonts/SourceSansPro-Black.ttf);
 }
 
-html{
+ html{
     scroll-behavior: smooth;
-}
+    font-family: Prata-Regular;
+} 
 
 
 .custom_bgcolor{
     background-color: rgb(196, 14, 14);
     font-weight: bold;
 }
+
 
 
 .nav-item a{
@@ -192,4 +194,9 @@ html{
 .avater{
     width: 60px;
     height: 60px;
+}
+
+.enroll_btn{
+    background-color: rgb(196, 14, 14);
+    color: white;
 }
