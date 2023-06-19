@@ -2,152 +2,213 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="title" content="HeinLearn">
+    <meta name="description" content="Programming နဲ႔ပက္သက္ၿပီး လမ္းေပ်ာက္ေနေသာ လူငယ္မ်ားတြက္  ရည္႐ြယ္ထားေသာ Platform တခုျဖစ္ပါတယ္။">
+    <meta name="keywords" content="PHP,Java,Learning,Programming,Code,Heinlearn,Begainner">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+
+
     <title>HeinLearn</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/style1.css">
     <link rel="shortcut icon" href="favicon.icon" type="image/x-icon">
+    <link rel="stylesheet" href="assets/fonts/Prata-Regular.ttf">
 
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
 
+    <link rel="icon" href="assets/images/1.jpg">
+    <link rel="apple-touch-icon" href="assets/images/1.jpg">
 </head>
-<body class="vh-100 overflow-hidden">
-    <!-- <nav class="navbar navbar-expand-md navbar-light shadow">
+<body>
+    <nav class="navbar navbar-expand-md custom_bgcolor navbar-light shadow">
         <div class="container">
             <a href="" class="navbar-brand">
-                <img src="assets/images/3.jpg" alt="" style="width: 130px;height: 70px;">
+                <img src="assets/images/logoHeinLearn.png" alt="" width="110" height="60">
             </a>
-            <button class="navbar-toggler" data-bs-target="#NavItem" data-bs-toggle="collapse">
+            <!--Toggle btn-->
+            <button class="navbar-toggler shadow-none bg-light" data-bs-target="#NavItem" data-bs-toggle="collapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!--Sidebar-->
             <div id="NavItem" class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item me-5"><a href="" class="nav-link text-center">Home</a></li>
-                    <li class="nav-item me-5"><a href="" class="nav-link text-center">Courses</a></li>
-                    <li class="nav-item me-5"><a href="" class="nav-link text-center">About</a></li>
-                    <li class="nav-item me-5"><a href="" class="nav-link text-center">Contact</a></li>
-                    <li class="nav-item me-5"><a href="" class="nav-link text-center">Login</a></li>
+                    <li class="nav-item me-5"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item me-5"><a href="#course" class="nav-link">Courses</a></li>
+                    <li class="nav-item me-5"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item me-5"><a href="#contact" class="nav-link">Contact Us</a></li>
                 </ul>
             </div>
+    </nav>
+    <div class="clear">
+
+    </div>
+     <div class="container">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
+            <div class="col d-none d-sm-none d-md-block d-xl-block d-lg-block fs-1 intro_text" style="margin-top: 10%;">
+                <p class="h1" style="font-size: 1.5em;line-height: 80px;">Learn New Things And Develop Yourself!</p>
+                <button class="btn btn-lg get_btn" style="background-color: rgb(196, 14, 14);color: white;">Get started</button>
+            </div>
+            <div class="col">
+                <img src="assets/images/desk.webp" alt="" class="img-fluid w-100 mt-5">
+            </div>
         </div>
-    </nav> -->
-    <!--Nav Bar-->
-    <!-- <section>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/images/3.jpg" alt="" width="150" height="80">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item px-2">
-                            <a class="nav-link active" aria-current="page" href="#">
-                                Home
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown px-2">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Courses
-                            </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="#">
-                                About
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav">
-                        <li class="nav-item px-1">
-                            <a href="" class="nav-link">
-                                Login
-                            </a>
-                        </li>
-                        <li class="nav-item px-1">
-                            <a href="" class="nav-link">
-                                Contact
-                            </a>
-                        </li>
-                        <li class="nav-item px-1">
-                            <a href="" class="nav-link">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </section> -->
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-trasparent ">
-        <div class="container">
-            <!--Logo-->
-          <a class="navbar-brand" href="#">
-            <img src="assets/images/3.jpg" alt="" width="150" height="80">
-          </a>
-          <!--Toggle btn-->
-          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!--Sidebar-->
-          <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <!--Sidebar header-->
-            <div class="offcanvas-header text-white border-bottom">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                <img src="assets/images/3.jpg" alt="" width="150" height="80">
-              </h5>
-              <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <!--Sidebar body-->
-            <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
-              <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
-                <li class="nav-item mx-2">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item dropdown mx-2">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Courses
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item mx-2" href="#">Action</a></li>
-                      <li><a class="dropdown-item mx-2" href="#">Another action</a></li>
-                    </ul>
-                  </li>
-                <li class="nav-item mx-2">
-                  <a class="nav-link" href="#">About Us</a>
-                </li>
-                
-                <li class="nav-item mx-2">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
-              </ul>
-              <!--Login/ Sign up-->
-              <div class="d-flex justify-content-center align-items-center gap-3 flex-column flex-lg-row">
-                <a href="" class="text-decoration-none">Login</a>
-                <a href="" class="text-white text-decoration-none px-3 py-2 rounded-4" style="background-color: rgb(197, 4, 4);">Sign Up</a>
-              </div>
-            </div>
+    </div>
+
+    <!-- <div class="container-fluid carosel">
+        <img src="assets/images/bg.jpg" alt="" class="img-fluid w-100" style="margin: -10px;">
+    </div>
+    
+    <div class="container text w-50" style="margin-left: 7%;">
+        <div class="row">
+          <div class="col d-none d-sm-none d-md-block d-xl-block d-lg-block fs-1">
+              <p class="h1" style="font-size: 1.5em;line-height: 80px;">Learn New Things And Develop Yourself!</p>
+              <button class="btn mt-5 btn-lg get_btn" style="background-color: rgb(196, 14, 14);color: white;">Get started</button>
           </div>
         </div>
-    </nav>
+      </div> -->
+  
+      <div class="container my-5 d-flex flex-column justify-content-center text-center">
+          <div class="row">
+              <div class="col d-md-none d-lg-none d-xl-none d-block d-sm-block fs-2 intro_text">        
+                <p class="h1" style="font-size: 1.5em;line-height: 80px;padding: 0px 30px 0px 30px;">Learn New Things And Develop Yourself!</p>
+                <button class="btn btn-lg get_btn mb-5" style="background-color: rgb(196, 14, 14);color: white;">Get started</button>
+              </div>
+          </div>
+      </div>
 
-    <main>
-        <section class="w-100 vh-100 d-flex flex-column justify-content-center align-items-center text-dark fs-1">
-            <h1 style="font-size: 1.5em;">Responsive Navbar</h1>
-            <h1 style="font-size: 1.5em;">Bootstrap 5</h1>
+    <!--Our Feature-->
+    <!-- <div class="container my-5">
+        
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4">
+            <div class="col mt-5">
+                <div class="card shadow" style="height: 450px;">
+                    <img src="assets/images/noCode1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body p-3">
+                        <h4>No Code Web Development</h4>
+                        <p class="card-text mt-2">No Code Development ဆိုသည္မွာ သမား႐ိုးက် ပ႐ိုဂရမ္ေရးျခင္း သို႔မဟုတ္ ကုဒ္ေရးျခင္း မလိုအပ္ဘဲ ေဆာ့ဖ္ဝဲ အက္ပ္လီေကးရွင္းမ်ား ဖန္တီးျခင္း သို႔မဟုတ္ အလိုအေလ်ာက္ လုပ္ေဆာင္ျခင္းမ်ားကို ရည္ၫႊန္းသည္။</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-5">
+                <div class="card shadow" style="height: 450px;">
+                    <img src="assets/images/entry.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body p-3">
+                        <h4>The Entry Of Programming</h4>
+                        <p class="card-text mt-2">ပ႐ိုဂရမ္းမင္းသည္ ကြန္ပ်ဴတာအား တိက်ေသာအလုပ္မ်ားကို မည္သို႔လုပ္ေဆာင္ရမည္ကို ေျပာျပသည့္ ၫႊန္ၾကားခ်က္မ်ား (ကုဒ္) ေရးသားျခင္းလုပ္ငန္းစဥ္ျဖစ္သည္။</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-5">
+                <div class="card shadow" style="height: 450px;">
+                    <img src="assets/images/php1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4>Apply Web Development With PHP</h4>
+                        <p class="card-text">PHP (Hypertext Preprocessor) သည္ ဝဘ္ဖြံ႕ၿဖိဳးတိုးတက္မႈအတြက္ ေရပန္းစားေသာ server-side scripting language တစ္ခုျဖစ္သည္။ ဒိုင္းနမစ္ဝဘ္စာမ်က္ႏွာမ်ားႏွင့္ ဝဘ္အက္ပလီေကးရွင္းမ်ားဖန္တီးရန္ တြင္က်ယ္စြာအသုံးျပဳသည္။</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col mt-5">
+                <div class="card shadow" style="height: 450px;">
+                    <img src="assets/images/java.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4>Apply Web Development With Java</h4>
+                        <p class="card-text">java သည္ ဝဘ္ဖြံ႕ၿဖိဳးတိုးတက္မႈအတြက္ အသုံးျပဳႏိုင္ေသာ စြယ္စုံသုံး ပ႐ိုဂရမ္ဘာသာစကားတစ္ခုျဖစ္သည္။ ၎သည္ ႀကံ့ခိုင္ၿပီး အ႐ြယ္တင္ႏိုင္ေသာ ဝဘ္အက္ပလီေကးရွင္းမ်ား တည္ေဆာက္ျခင္းလုပ္ငန္းစဥ္ကို ႐ိုးရွင္းလြယ္ကူေစမည့္ ေဘာင္မ်ားႏွင့္ စာၾကည့္တိုက္မ်ားကို ပံ့ပိုးေပးသည္။ </p>
+                    </div>
+                  </div>
+            </div>
+        </div> 
+    </div> -->
+
+    <div class="container my-5" id="course">
+        <h1 class="text-center">Our Featured Courses</h1>
+        <section class="customer-logos slider">
+            <div class="col mt-5">
+                <a href="course.html#no_code" style="text-decoration: none;">
+                    <div class="card shadow" style="height: 450px;">
+                        <img src="assets/images/noCode1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-3">
+                            <h4>No Code Web Development</h4>
+                            <p class="card-text mt-2">No Code Development ဆိုသည္မွာ သမား႐ိုးက် ပ႐ိုဂရမ္ေရးျခင္း သို႔မဟုတ္ ကုဒ္ေရးျခင္း မလိုအပ္ဘဲ ေဆာ့ဖ္ဝဲ အက္ပ္လီေကးရွင္းမ်ား ဖန္တီးျခင္း သို႔မဟုတ္ အလိုအေလ်ာက္ လုပ္ေဆာင္ျခင္းမ်ားကို ရည္ၫႊန္းသည္။</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col mt-5">
+                <a href="course.html#entry" style="text-decoration: none;">
+                    <div class="card shadow" style="height: 450px;">
+                        <img src="assets/images/entry.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body p-3">
+                            <h4>The Entry Of Programming</h4>
+                            <p class="card-text mt-2">ပ႐ိုဂရမ္းမင္းသည္ ကြန္ပ်ဴတာအား တိက်ေသာအလုပ္မ်ားကို မည္သို႔လုပ္ေဆာင္ရမည္ကို ေျပာျပသည့္ ၫႊန္ၾကားခ်က္မ်ား (ကုဒ္) ေရးသားျခင္းလုပ္ငန္းစဥ္ျဖစ္သည္။</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col mt-5">
+                <a href="course.html#php" style="text-decoration: none;">
+                    <div class="card shadow" style="height: 450px;">
+                        <img src="assets/images/php1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4>Apply Web Development With PHP</h4>
+                            <p class="card-text">PHP (Hypertext Preprocessor) သည္ ဝဘ္ဖြံ႕ၿဖိဳးတိုးတက္မႈအတြက္ ေရပန္းစားေသာ server-side scripting language တစ္ခုျဖစ္သည္။ ဒိုင္းနမစ္ဝဘ္စာမ်က္ႏွာမ်ားႏွင့္ ဝဘ္အက္ပလီေကးရွင္းမ်ားဖန္တီးရန္ တြင္က်ယ္စြာအသုံးျပဳသည္။</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col mt-5">
+                <a href="course.html#java" style="text-decoration: none;">
+                    <div class="card shadow" style="height: 450px;">
+                        <img src="assets/images/java.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4>Apply Web Development With Java</h4>
+                            <p class="card-text">java သည္ ဝဘ္ဖြံ႕ၿဖိဳးတိုးတက္မႈအတြက္ အသုံးျပဳႏိုင္ေသာ စြယ္စုံသုံး ပ႐ိုဂရမ္ဘာသာစကားတစ္ခုျဖစ္သည္။ ၎သည္ ႀကံ့ခိုင္ၿပီး အ႐ြယ္တင္ႏိုင္ေသာ ဝဘ္အက္ပလီေကးရွင္းမ်ား တည္ေဆာက္ျခင္းလုပ္ငန္းစဥ္ကို ႐ိုးရွင္းလြယ္ကူေစမည့္ ေဘာင္မ်ားႏွင့္ စာၾကည့္တိုက္မ်ားကို ပံ့ပိုးေပးသည္။ </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </section>
-    </main>
+        </div>
 
+    
+
+    <!--Customer Review-->
+    
     <script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="assets/fontawesome/js/all.min.js"></script>
+    <script src="assets/js/index.js"></script>
+
+    <!--Plugin-->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 </body>
 </html>
+
+<script>
+    $(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 1000,
+            settings: {
+                slidesToShow: 2
+            }
+        }, {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+});
+</script>
